@@ -1,0 +1,1105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel Decorative', cursive;
+}
+body{
+    width: 100%;
+    height: 100vh;
+/*    overflow: hidden;*/
+    background-color: #2c2d30;
+}
+.main{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.main .row{
+/*    position: sticky;*/
+/*    top: 20px;*/
+    
+/*    position: relative;*/
+    margin: 20px; 
+    align-items: center;
+    justify-content: center;
+/*    z-index: 3000;*/
+    
+}
+.main .profile{
+    width: 220px;
+    height: 600px;
+    padding: 30px 15px 15px 15px;
+    border-radius: 20px;
+    background: #2c2d30;
+    box-shadow: 3px 6px 2px rgba(0,0,0,0.2),
+                -2px -3px 2px rgba(255,255,255,0.15);
+}
+.main .profile .img-outer{
+    width: 150px;
+    height: 150px;
+    box-shadow: inset 3px 6px 2px rgba(0,0,0,0.2),
+                inset -2px -3px 2px rgba(255,255,255,0.15);
+    border-radius: 50%;
+    margin: auto;
+}
+.main .profile .img-outer .img-inner{
+    width: 130px;
+    height: 130px;
+    background: url('Img/kaushik.jpeg');
+    background-size: cover;
+    background-position: 25px;
+    position: absolute;
+    box-shadow: 3px 6px 2px rgba(0,0,0,0.2),
+                -2px -3px 2px rgba(255,255,255,0.15);
+    border-radius: 50%;
+    margin: 10px;
+}
+.main .profile .title h2{
+    color: #fafafa;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.main .profile .title h4{
+    color: #ccc;
+    margin: -15px;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+}
+.main .profile .title h2 mark{
+    box-sizing: border-box;
+    background-image: linear-gradient(180deg,#f56c6d 0,#f56c6d 100%);
+    position: relative;
+    background-color: transparent;
+    color: #fafafa;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 100% .5em;
+    background-position: 0 70%;
+}
+.main .profile #nav{
+    margin-top: 30px;
+    left: -10px;
+    position: relative;
+    width: 80%;
+}
+.main .profile #nav a{
+    display: block;
+/*    position: relative;*/
+/*    top: 10px;*/
+    width: 100%;
+    height: 35px;
+    padding: 15px 15px 1px 15px;
+    margin: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fafafa;
+    border-radius: 2rem;
+/*    float: left;*/
+    text-align: left;
+    box-shadow: 2px 3px 2px rgba(0,0,0,0.2),
+                -1px -1px 2px rgba(255,255,255,0.15);
+    transition: 1s;
+}
+.main .profile #nav a:hover,
+.main .profile #nav a.active{
+    box-shadow: inset 3px 6px 2px rgba(0,0,0,0.2),
+                inset -2px -3px 2px rgba(255,255,255,0.15);
+}
+.main .profile #nav a.active i{
+    color: #fff;
+    animation: bounce 1s infinite alternate;
+}
+.main .profile #nav a i{
+    float: right;
+    padding-top: -2px;
+    font-size: 25px;
+}
+.main .row.content{
+    width: 60%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 3px 6px 2px rgba(0,0,0,0.2),
+                -2px -3px 2px rgba(255,255,255,0.15);
+}
+.main .content{
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+}
+.main .content .home{
+    width: 80%;
+    display: block;
+    animation: fadeIn 2s linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 2s;
+}
+.main .content .home .title{
+    width: 100%;
+    position: relative;
+    top: -80px;
+}
+.main .content .home .title h2{
+    color: #fafafa;
+    padding: 10px;
+    margin: 10px;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+.main .content .home .title h4{
+    color: #ccc;
+    margin: -15px;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+.main  .content .home .title h2 mark{
+    box-sizing: border-box;
+    background-image: linear-gradient(180deg,#f56c6d 0,#f56c6d 100%);
+    position: relative;
+    background-color: transparent;
+    color: #fafafa;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 100% .5em;
+    background-position: 0 70%;
+}
+.main .content .home .links{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    text-align: center;
+}
+.main .content .home .links a{
+    padding: 15px 20px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 3px 6px 2px rgba(0,0,0,0.2),
+                -2px -3px 2px rgba(255,255,255,0.15);
+    transition: 1s;
+    color: #ccc;
+}
+.main .content .home .links a i{
+    transition: 1s;
+}
+.main .content .home .links a:hover{
+    box-shadow: inset 3px 6px 2px rgba(0,0,0,0.2),
+                inset -2px -3px 2px rgba(255,255,255,0.15);
+}
+.main .content .home .links a:hover i{
+    color: #fff;
+    animation: bounce 1s infinite alternate;
+}
+.main .content .about{
+    width: 100%;
+    height: auto;
+    display: none;
+    animation: fadeIn 2s linear;
+}
+.main .content .about h1{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+}
+.aboutDiv{
+    background: #2c2d30;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 3px 6px 2px rgba(0,0,0,0.2),
+                -2px -3px 2px rgba(255,255,255,0.15);
+}
+.aboutDiv h3{
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 3%;
+    left: 3%;
+    word-spacing: 10px;
+}
+.aboutDiv .title .outline{
+    position: relative;
+    width: 70px;
+    height: 8px;
+    background: #2c2d30;
+    margin-top: 0.5%;
+    left: 3.5%;
+    border-radius: 150px;
+    box-shadow: inset 3px 6px 2px rgba(0,0,0,0.2),
+                inset -2px -3px 2px rgba(255,255,255,0.15);
+}
+.aboutDiv .title .outline .inline{
+    width: 45%;
+    height: 50%;
+    position: relative;
+    background: linear-gradient(180deg,#f56c6d 0,#f56c6d 100%);
+    left: 8px;
+    top: 3px;
+    border-radius: 150px;
+}
+.aboutDiv .name{
+    position: relative;
+/*    margin-top: 20%;*/
+}
+.aboutDiv .name h2{
+    position: relative;
+    color: #fafafa;
+    padding: 10px;
+    margin: 10px;
+    font-size: 2em;
+    font-weight: 500;
+/*    left: 1.5%;*/
+}
+.aboutDiv .name h4{
+    position: relative;
+    color: #ccc;
+    margin-top: -15px;
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 0;
+/*    left: 1.5%;*/
+}
+.aboutDiv .name h2 mark{
+    box-sizing: border-box;
+    background-image: linear-gradient(180deg,#f56c6d 0,#f56c6d 100%);
+    position: relative;
+    background-color: transparent;
+    color: #fafafa;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 100% .5em;
+    background-position: 0 70%;
+}
+.aboutDiv .aboutMe {
+    width: 100%;
+    display: flex;
+}
+.aboutDiv .aboutMe .row{
+    width: 44%;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: justify;
+    color: #eee;
+    font-size: 12px;
+}
+.aboutDiv .info{
+    display: flex;
+    width: 100%;
+}
+.aboutDiv .info .col .innerborder{
+    width: 95%;
+    height: 90%;
+    margin: 12px auto;
+    box-shadow: 3px 6px 2px rgba(0,0,0,0.2),
+                -2px -3px 2px rgba(255,255,255,0.15);
+    border-radius: 10px;
+}
+.aboutDiv .info .col{
+    width: 44%;
+    margin: auto;
+    box-shadow: inset 3px 6px 2px rgba(0,0,0,0.2),
+                inset -2px -3px 2px rgba(255,255,255,0.15);
+    border-radius: 20px;
+}
+.aboutDiv .info .col .innerborder .row{
+    display: block;
+}
+.aboutDiv .info .col .innerborder .row .text{
+    display: flex;
+}
+.aboutDiv .info .col .innerborder .row .text .heading{
+    width: 30%;
+    color: #eee;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border-right: 2px #777 solid;
+}
+.aboutDiv .info .col .innerborder .row .text .values a{
+    text-decoration: none;
+    color: #999;
+}
+.aboutDiv .info .col .innerborder .row .text .values{
+    width: 70%;
+    text-align: center;
+    color: #999;
+    padding: 10px;
+    margin: auto;
+    font-weight: 100;
+    font-size: 15px;
+}
+.aboutDiv .coding{
+    display: flex;
+    width: 100%;
+}
+.aboutDiv .coding .progressBars{
+    width: 91%;
+    margin: 10px;
+/*    display: block;*/
+}
+.aboutDiv .coding .progressBars .row{
+    display: block;
+    width: 100%;
+}
+.aboutDiv .coding .progressBars .row .caption{
+    font-size: 15px;
+    color: #fafafa;
+    left: 5%;
+    position: relative;
+    margin: 2% auto 0 auto;
+}
+.aboutDiv .coding .progressBars .row .outline{
+    position: relative;
+    width: 90%;
+    height: 15px;
+    background: #2c2d30;
+    margin: 1%;
+    left: 4%;
+    border-radius: 150px;
+    box-shadow: inset 3px 6px 2px rgba(0,0,0,0.2),
+                inset -2px -3px 2px rgba(255,255,255,0.15);
+}
+.aboutDiv .coding .progressBars .row .outline .inline{
+    width: 85%;
+    height: 50%;
+    position: relative;
+    background: #fafafa;
+    left: 8px;
+    top: 3px;
+    border-radius: 150px;
+}
+.aboutDiv .coding .progressBars .row:nth-child(2) .outline .inline{
+    width: 75%;
+}
+.aboutDiv .coding .progressBars .row:nth-child(3) .outline .inline{
+    width: 80%;
+}
+.aboutDiv .coding .progressBars .row:nth-child(4) .outline .inline{
+    width: 88%;
+}
+.aboutDiv .coding .text{
+/*    width: 8%;*/
+/*    height: 25px;*/
+    position: relative;
+    right: 3%;
+    margin: auto;
+    transform: rotate(90deg);
+    padding: 0.3125rem 2.5625rem;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px #202125, 
+                -3px -3px 3px #353535;
+}
+.aboutDiv .coding .text .heading{
+/*    vertical-align: middle;*/
+    color: #fafafa;
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+}
+.aboutDiv .design{
+    display: flex;
+    width: 100%;
+}
+.aboutDiv .design .progressBars{
+    width: 91%;
+    margin: 10px;
+/*    display: block;*/
+}
+.aboutDiv .design .progressBars .row{
+    display: block;
+    width: 100%;
+}
+.aboutDiv .design .progressBars .row .caption{
+    font-size: 15px;
+    color: #fafafa;
+    left: 5%;
+    position: relative;
+    margin: 2% auto 0 auto;
+}
+.aboutDiv .design .progressBars .row .outline{
+    position: relative;
+    width: 90%;
+    height: 15px;
+    background: #2c2d30;
+    margin: 1%;
+    left: 4%;
+    border-radius: 150px;
+    box-shadow: inset 3px 6px 2px rgba(0,0,0,0.2),
+                inset -2px -3px 2px rgba(255,255,255,0.15);
+}
+.aboutDiv .design .progressBars .row .outline .inline{
+    width: 95%;
+    height: 50%;
+    position: relative;
+    background-image: linear-gradient(180deg,#f56c6d 0,#f56c6d 100%);
+    left: 8px;
+    top: 3px;
+    border-radius: 150px;
+}
+.aboutDiv .design .progressBars .row:nth-child(2) .outline .inline{
+    width: 85%;
+}
+.aboutDiv .design .progressBars .row:nth-child(3) .outline .inline{
+    width: 85%;
+}
+.aboutDiv .design .progressBars .row:nth-child(4) .outline .inline{
+    width: 80%;
+}
+.aboutDiv .design .text{
+    position: relative;
+    right: 3%;
+    margin: auto 20px auto 20px;
+    transform: rotate(90deg);
+    padding: 0.3125rem 1.5625rem;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px #202125, 
+                -3px -3px 3px #353535;
+}
+.aboutDiv .design .text .heading{
+    text-align: center;
+    color: #f56c6d;
+    font-size: 20px;
+    margin: auto;
+}
+.aboutDiv .others{
+    display: flex;
+    width: 100%;
+}
+.aboutDiv .others .progressBars{
+    width: 91%;
+    margin: 10px;
+/*    display: block;*/
+}
+.aboutDiv .others .progressBars .row{
+    display: block;
+    width: 100%;
+}
+.aboutDiv .others .progressBars .row .caption{
+    font-size: 15px;
+    color: #fafafa;
+    left: 5%;
+    position: relative;
+    margin: 2% auto 0 auto;
+}
+.aboutDiv .others .progressBars .row .outline{
+    position: relative;
+    width: 90%;
+    height: 15px;
+    background: #2c2d30;
+    margin: 1%;
+    left: 4%;
+    border-radius: 150px;
+    box-shadow: inset 3px 6px 2px rgba(0,0,0,0.2),
+                inset -2px -3px 2px rgba(255,255,255,0.15);
+}
+.aboutDiv .others .progressBars .row .outline .inline{
+    width: 85%;
+    height: 50%;
+    position: relative;
+    background: #202125;
+    left: 8px;
+    top: 3px;
+    border-radius: 150px;
+}
+.aboutDiv .others .progressBars .row:nth-child(2) .outline .inline{
+    width: 90%;
+}
+.aboutDiv .others .progressBars .row:nth-child(3) .outline .inline{
+    width: 80%;
+}
+.aboutDiv .others .text{
+    position: relative;
+    right: 3%;
+    margin: auto 20px auto 20px;
+    transform: rotate(90deg);
+    padding: 0.3125rem 3.625rem;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px #202125, 
+                -3px -3px 3px #353535;
+}
+.aboutDiv .others .text .heading{
+    text-align: center;
+    color: #fafafa;
+    font-size: 20px;
+    margin: auto;
+}
+.aboutDiv .timeline{
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 90%;
+}
+/*for line*/
+.aboutDiv .timeline:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 5px;
+    height: 100%;
+    border-radius: 150px;
+    background: #2c2d30;
+    box-shadow: inset 3px 6px 2px rgba(0,0,0,0.2),
+                inset -2px -3px 2px rgba(255,255,255,0.15);
+}
+.aboutDiv .timeline ul{
+    padding: 0;
+    margin: 0;
+}
+.aboutDiv .timeline ul li{
+    line-height: normal;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    list-style-type: none;
+    color: #fafafa;
+}
+.aboutDiv .timeline ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+.aboutDiv .timeline ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+.aboutDiv .timeline ul li:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -5px;
+    width: 3px;
+    height: 8px;
+    background: #f56c6d;
+    border-radius: 150px;
+}
+.aboutDiv .timeline ul li:nth-child(even):before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 1px;
+    width: 3px;
+    height: 8px;
+    background: #f56c6d;
+    border-radius: 150px;
+}
+.aboutDiv .timeline ul li .content{
+    padding-bottom: 20px;
+}
+.aboutDiv .timeline ul li .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    text-align: justify;
+}
+.aboutDiv .timeline ul li .title h4{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+}
+.aboutDiv .timeline ul li:nth-child(1) .title{
+    position: absolute;
+    top: 20px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 3px 6px 2px rgba(0,0,0,0.2),
+                -2px -3px 2px rgba(255,255,255,0.15);
+}
+.aboutDiv .timeline ul li:nth-child(2) .title{
+    position: absolute;
+    top: 20px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 3px 6px 2px rgba(0,0,0,0.2),
+                -2px -3px 2px rgba(255,255,255,0.15);
+}
+.aboutDiv .timeline ul li:nth-child(3) .title{
+    position: absolute;
+    top: 20px;
+    right: -195px;
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 3px 6px 2px rgba(0,0,0,0.2),
+                -2px -3px 2px rgba(255,255,255,0.15);
+}
+.abouDiv .certificate{
+    width: 100%;
+    height: auto;
+}
+.aboutDiv .certificate .col{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.aboutDiv .certificate .col .row{
+    width: 50%;
+    margin: 20px;
+}
+.aboutDiv .certificate .col .row .outerborder{
+    width: 100%;
+/*    height: 100%;*/
+/*    margin: 20px;*/
+    padding: 10px;
+    box-shadow: inset 3px 6px 2px rgba(0,0,0,0.2),
+                inset -2px -3px 2px rgba(255,255,255,0.15);
+    border-radius: 20px;
+}
+.aboutDiv .certificate .col .row .outerborder .innerborder{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    box-shadow: 3px 6px 2px rgba(0,0,0,0.2),
+                -2px -3px 2px rgba(255,255,255,0.15);
+    border-radius: 10px;
+}
+.aboutDiv .certificate .col .row .outerborder .innerborder .logo{
+    width: 25%;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+    color: #f56c6d;
+    margin: 10px auto;
+}
+.aboutDiv .certificate .col .row .outerborder .innerborder .logo i{
+    padding: 30px;
+    box-shadow: inset 3px 6px 2px rgba(0,0,0,0.2),
+                inset -2px -3px 2px rgba(255,255,255,0.15);
+    border-radius: 50%;
+}
+.aboutDiv .certificate .col .row .outerborder .innerborder .certificate_content{
+    width: 75%;
+    margin: 10px;
+}
+.aboutDiv .certificate .col .row .outerborder .innerborder .certificate_content a{
+    text-decoration: none;
+    font-size: 16px;
+}
+.aboutDiv .certificate .col .row .outerborder .innerborder .certificate_content a:nth-child(1){
+/*    font-size: 14px;*/
+    color: #fafafa;
+}
+.aboutDiv .certificate .col .row .outerborder .innerborder .certificate_content a:nth-child(2){
+    font-size: 14px;
+    color: #c1c1c1;
+}
+.aboutDiv .certificate .col .row .outerborder .innerborder .certificate_content a:nth-child(3){
+    font-size: 12px;
+    color: #a1a1a1;
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    25%,75%{
+        transform: translateY(-2px);
+    }
+    50%,100%{
+        transform: translateY(-3px);
+    }
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+/*
+@media only screen and (max-width: 850px){
+    .main .content{
+        left: 18%;
+    }
+    .main .stickyRow{
+        left: 4%;
+    }
+}
+@media only screen and (max-width: 800px and min-width:849px){
+    .main .content{
+        left: 20%;
+    }
+    .main .stickyRow{
+        left: 2%;
+    }
+}
+*/
+@media only screen and (max-width: 1100px){
+    .aboutDiv .others .text{
+        margin: auto 45px auto 45px;
+        padding: 0.3125rem 2.0rem;
+    }
+    .aboutDiv .timeline{
+        width: 100%;
+    }
+    .aboutDiv .certificate .col .row .outerborder .innerborder .certificate_content{
+        margin: auto 20px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .main{
+        display: block;
+/*
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+*/
+    }
+    .main .stickyRow{
+        position: relative;
+        left: 0;
+        margin: 10px auto;
+    }
+    .main .content{
+        left: auto;
+        margin: auto;
+    }
+    .main .row.profile{
+        width: 83%;
+    }
+    .main .profile #nav{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main .profile #nav a{
+        font-size: 15px;
+        width: 85%;
+    }
+    .main .row.content{
+        width: 80%;
+    }
+    .main .content .home .title h2{
+        font-size: 20px;
+    }
+    .main .content .home .title h4{
+        font-size: 15px;
+    }
+    .main .content .home .links a{
+        padding: 12px 15px;
+    }
+    .aboutDiv .name h2{
+        font-size: 1.5em;
+    }
+    .aboutDiv .name h4{
+        font-size: 15px;
+    }
+    .aboutDiv h3{
+        margin-top: 10%;
+        left: 3%;
+    }
+    .aboutDiv .title .outline{
+        left: 3.5%;
+    }
+    .aboutDiv .aboutMe{
+        display: block;
+        width: 90%;
+    }
+    .aboutDiv .aboutMe .row{
+        width: 90%;
+        margin: 10px;
+        padding: 10px;
+    }
+    .aboutDiv .info{
+        display: block;
+    }
+    .aboutDiv .info .col{
+        width: 95%;
+        margin: 10px auto;
+        padding: 1px;
+    }
+    .aboutDiv .info .col .innerborder{
+        width: 95%;
+        height: 80%;
+    }
+    .aboutDiv .info .col .innerborder .row .text .heading,
+    .aboutDiv .info .col .innerborder .row .text .values,
+    .aboutDiv .info .col .innerborder .row .text .values a{
+        font-size: 12px;
+    }
+    .aboutDiv .coding{
+        display: block;
+    }
+    .aboutDiv .coding .text{
+        transform: rotate(0);
+        width: 70%; 
+        right: 0;
+    }
+    .aboutDiv .coding .text .heading{
+        position: relative;
+        font-size: 12px;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .aboutDiv .design{
+        display: block;
+    }
+    .aboutDiv .design .text{
+        transform: rotate(0);
+        width: 70%;
+        height: 13px;
+        right: 0;
+        padding: 0.3125rem 2.5625rem;
+    }
+    .aboutDiv .design .text .heading{
+        position: absolute;
+        font-size: 12px;
+/*        text-align: center;*/
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .aboutDiv .others{
+        display: block;
+    }
+    .aboutDiv .others .text{
+        transform: rotate(0);
+        width: 70%;
+        height: 13px;
+        right: 0;
+        margin: auto;
+        padding: 0.3125rem 2.5625rem;
+    }
+    .aboutDiv .others .text .heading{
+        position: absolute;
+        font-size: 12px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .aboutDiv .timeline{
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+    .aboutDiv .timeline:before{
+        left: 20px;
+        height: 90%;
+    }
+    .aboutDiv .timeline ul li:nth-child(odd),
+    .aboutDiv .timeline ul li:nth-child(even){
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .aboutDiv .timeline ul li:nth-child(odd):before,
+    .aboutDiv .timeline ul li:nth-child(even):before{
+        top: 10px;
+        left: 21px;
+    }
+    .aboutDiv .timeline ul li .title h4{
+        font-size: 20px;
+    }
+    .aboutDiv .timeline ul li:nth-child(1) .title{
+        top: 0;
+        left: 40px;
+        right: inherit;
+    }
+    .aboutDiv .timeline ul li:nth-child(2) .title{
+        top: 0;
+        left: 40px;
+        right: inherit;
+    }
+    .aboutDiv .timeline ul li:nth-child(3) .title{
+        top: 0;
+        left: 40px;
+        right: inherit;
+    }
+    .aboutDiv .certificate .col{
+        display: block;
+    }
+    .aboutDiv .certificate .col .row{
+        width: 90%;
+        margin: 10px 0;
+        padding: 5px;
+    }
+    .aboutDiv .certificate .col .row .outerborder{
+        padding: 9px 9px 9px 9px;
+    }
+    .aboutDiv .certificate .col .row .outerborder .innerborder .certificate_content{
+        margin: auto 20px;
+    }
+    .aboutDiv .certificate .col .row .outerborder .innerborder .certificate_content a:nth-child(1){
+        font-size: 12px;
+    }
+    .aboutDiv .certificate .col .row .outerborder .innerborder .certificate_content a:nth-child(2){
+        font-size: 10px;
+    }
+    .aboutDiv .certificate .col .row .outerborder .innerborder .certificate_content a:nth-child(3){
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 650px){
+    .aboutDiv .certificate .col .row .outerborder .innerborder .logo  i{
+        padding: 20px;
+    }
+    
+}
+@media only screen and (max-width: 480px){
+    .main .content .home .links a{
+        padding: 10px 12px;
+    }
+    .aboutDiv .coding .text .heading{
+        font-size: 8px;
+    }
+    .aboutDiv .coding .text{
+        width: 50%;
+    }
+    .aboutDiv .design .text .heading{
+        font-size: 8px;
+    }
+    .aboutDiv .design .text{
+        width: 55%;
+    }
+    .aboutDiv .design .progressBars .row .outline .inline{
+        width: 94%;
+        left: 5px;
+        top: 4px;
+    }
+    .aboutDiv .others .text .heading{
+        font-size: 8px;
+    }
+    .aboutDiv .others .text{
+        width: 55%;
+    }
+    .aboutDiv .others .progressBars .row .outline .inline{
+        width: 85%;
+        left: 5px;
+        top: 4px;
+    }
+    .aboutDiv .timeline ul li .title h4{
+        font-size: 16px;
+    }
+    .aboutDiv .timeline:before{
+        height: 95%;
+    }
+    .aboutDiv .certificate .col .row .outerborder .innerborder .certificate_content a:nth-child(1){
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 350px){
+    .main{
+        display: block;
+/*        text-align: center;*/
+/*        align-content: center;*/
+/*        align-items: center;*/
+/*        justify-content: center;*/
+    }
+    .main .row.profile{
+        width: 75%;
+    }
+    .main .profile #nav{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main .profile #nav a{
+        font-size: 15px;
+        width: 75%;
+    }
+    .main .row.content{
+        width: 70%;
+    }
+    .main .content .home .title h2{
+        font-size: 18px;
+    }
+    .main .content .home .title h4{
+        font-size: 15px;
+    }
+    .main .content .home .links a{
+        padding: 2px 4px;
+    }
+    .aboutDiv .info .col .innerborder .row .text .heading,
+    .aboutDiv .info .col .innerborder .row .text .values,
+    .aboutDiv .info .col .innerborder .row .text .values a{
+        font-size: 9px;
+    }
+    .aboutDiv .design .progressBars .row .outline .inline{
+        width: 90%;
+        height: 45%;
+        left: 5px;
+        top: 4px;
+    }
+    .aboutDiv .design .text{
+        width: 50%;
+        margin: auto;
+    }
+    .aboutDiv .others .progressBars .row .outline .inline{
+        width: 85%;
+        height: 45%;
+        left: 5px;
+        top: 4px;
+    }
+    .aboutDiv .others .text{
+        width: 50%;
+        margin: auto;
+    }
+    .aboutDiv .timeline{
+        margin: 0
+    }
+    .aboutDiv .timeline ul li .title h4{
+        font-size: 14px;
+    }
+    .aboutDiv .certificate .col .row .outerborder{
+        position: relative;
+        left: -10px;
+        padding: 1px 9px 9px 9px;
+    }
+    .aboutDiv .certificate .col .row .outerborder .innerborder{
+        display: block;
+    }
+    .aboutDiv .certificate .col .row .outerborder .innerborder .logo{
+        width: 100%;
+    }
+    .aboutDiv .certificate .col .row .outerborder .innerborder .certificate_content{
+        width: 100%;
+        margin: 0;
+    }
+    .aboutDiv .certificate .col .row .outerborder .innerborder .logo{
+        font-size: 22px;
+    }
+    .aboutDiv .certificate .col .row .outerborder .innerborder .logo  i{
+        padding: 10px;
+    }
+    .aboutDiv .certificate .col .row .outerborder .innerborder .certificate_content a{
+        font-size: 7px;
+    }
+}
